@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UI Animator Viewer"
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorials point"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textColor="#92c71d"
+        android:textIsSelectable="false"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Tutorials"
+            android:id="@+id/button1"
+            android:background="#92c71d"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Google"
+            android:id="@+id/button2"
+            android:background="#92c71d"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Ubuntu"
+            android:id="@+id/button3"
+            android:background="#92c71d"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Debian"
+            android:id="@+id/button4"
+            android:background="#92c71d"
+            android:layout_below="@+id/button1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Android"
+            android:id="@+id/button5"
+            android:background="#92c71d"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Pass VCP"
+            android:id="@+id/button6"
+            android:background="#92c71d"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp" />
+
+</RelativeLayout>
