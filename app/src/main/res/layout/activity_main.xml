@@ -45,7 +45,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Google"
+            android:text="Chrome"
             android:id="@+id/button2"
             android:background="#92c71d"
             android:layout_below="@+id/imageView"
@@ -63,7 +63,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Debian"
+            android:text="Batman"
             android:id="@+id/button4"
             android:background="#92c71d"
             android:layout_below="@+id/button1"
@@ -83,7 +83,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Pass VCP"
+            android:text="Superman"
             android:id="@+id/button6"
             android:background="#92c71d"
             android:layout_below="@+id/button3"

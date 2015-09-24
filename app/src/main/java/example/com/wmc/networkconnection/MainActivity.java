@@ -12,8 +12,6 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -23,7 +21,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -33,7 +30,6 @@ public class MainActivity extends Activity {
     private Bitmap bitmap = null;
     private final ArrayList<Bitmap> bitmapArray = new ArrayList<>();
     Button b1 ,b2, b3, b4, b5, b6;
-    private final Bundle myBitmaps = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,50 +42,52 @@ public class MainActivity extends Activity {
         b5 = (Button) findViewById(R.id.button5);
         b6 = (Button) findViewById(R.id.button6);
 
-        // TODO: 9/22/15 http://stackoverflow.com/questions/6371930/is-it-possible-to-create-an-array-of-bitmap-in-android 
-        // TODO: 9/22/15 Build an array of bitmaps and store them to avoid downloading more than once.
-        // final ArrayList<Bitmap> bitmapArray = new ArrayList<>(6);
-
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://www.tutorialspoint.com/green/images/logo.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[0]);
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://www.google.com/logos/doodles/2015/first-day-of-fall-2015-northern-hemisphere-6003706315145216-thp.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[1]);
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://mimisblog.free.fr/public/ubuntu/logo_ubuntu.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[2]);
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://orig14.deviantart.net/b803/f/2010/019/8/c/powered_by_debian_by_oege89.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[3]);
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://www.userlogos.org/files/logos/drown/android4.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[4]);
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
-                downloadImage("http://www.passthevcp.com/wp/wp-content/uploads/2015/05/Pass-the-VCP-logo-Mobile.png");
+                String[] url = getResources().getStringArray(R.array.urls);
+                downloadImage(url[5]);
             }
         });
     }
@@ -184,27 +182,5 @@ public class MainActivity extends Activity {
             return false;
         }
         return false;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -3,4 +3,12 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="urls">
+        <item>http://www.tutorialspoint.com/green/images/logo.png</item>
+        <item>http://photoshoproadmap.com/wp-content/uploads/2012/09/chrome.jpg</item>
+        <item>http://mimisblog.free.fr/public/ubuntu/logo_ubuntu.png</item>
+        <item>http://orig09.deviantart.net/e3b8/f/2013/027/e/c/the_batman_logo_by_striik3r-d5swtt3.png</item>
+        <item>http://www.userlogos.org/files/logos/drown/android4.png</item>
+        <item>http://glyphcreator.manofsteel.com/files/images/splash/mos_splash_shield2.png</item>
+    </string-array>
 </resources>
