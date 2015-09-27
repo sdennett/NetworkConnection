@@ -1,14 +1,81 @@
 <resources>
     <string name="app_name">NetworkConnection</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="buttons">
+        <!-- THEME: SOFTDRINKS -->
+        <item>Soft Drinks</item>
+        <item>Mountain Dew</item>
+        <item>Dr Pepper</item>
+        <item>Sprite</item>
+        <item>Coca Cola</item>
+        <item>Pepsi Cola</item>
+        <item>Orange Crush</item>
+
+        <!-- THEME: GOLF -->
+        <item>Golf</item>
+        <item>Nike</item>
+        <item>Titleist</item>
+        <item>Taylor Made</item>
+        <item>Callaway</item>
+        <item>Cleveland</item>
+        <item>Cobra</item>
+
+        <!-- THEME: TRAINS -->
+        <item>Trains</item>
+        <item>North Western</item>
+        <item>Wabash</item>
+        <item>Amtrak</item>
+        <item>Norfork Southern</item>
+        <item>RF -N- P</item>
+        <item>Durango</item>
+
+        <!-- THEME: BEERS -->
+        <item>Beers</item>
+        <item>Yuengling</item>
+        <item>Goose Island</item>
+        <item>LEINENKUGEL</item>
+        <item>Samuel Adams</item>
+        <item>Anchor Steam</item>
+        <item>Sapporo</item>
+    </string-array>
+
     <string-array name="urls">
-        <item>http://www.tutorialspoint.com/green/images/logo.png</item>
-        <item>http://photoshoproadmap.com/wp-content/uploads/2012/09/chrome.jpg</item>
-        <item>http://mimisblog.free.fr/public/ubuntu/logo_ubuntu.png</item>
-        <item>http://orig09.deviantart.net/e3b8/f/2013/027/e/c/the_batman_logo_by_striik3r-d5swtt3.png</item>
-        <item>http://www.userlogos.org/files/logos/drown/android4.png</item>
-        <item>http://glyphcreator.manofsteel.com/files/images/splash/mos_splash_shield2.png</item>
+        <!-- THEME: SOFTDRINKS -->
+        <item>http://www.pasadenaaltadena.com/images/sodajerks_logo.gif</item>
+        <item>http://vignette2.wikia.nocookie.net/mountaindew/images/2/2e/Untitled_5.png/revision/latest?cb=20121130222443</item>
+        <item>http://www.drpepper.se/img/dr-pepper-logo2.png</item>
+        <item>http://www.vectorsland.com/imgd/l7680-sprite-eps-logo-17019.png</item>
+        <item>http://i.ebayimg.com/00/s/MjkxWDMwMA==/$(KGrHqV,!hkFBLYZPf5MBQf9QnJ+Jg~~60_35.JPG</item>
+        <item>http://vignette2.wikia.nocookie.net/logosfake/images/1/15/Pepsi_2007.png/revision/latest?cb=20140327111911</item>
+        <item>http://www.clipartbest.com/cliparts/niX/ojX/niXojXxkT.png</item>
+
+        <!-- THEME: GOLF -->
+        <item>http://gcmk.fr/images/gros%20logo.png</item>
+        <item>http://intraweb.stockton.edu/eyos/development_and_foundation/content/images/Golf%202014/nikegolf_logo.jpg</item>
+        <item>http://cdn.cybergolf.com/images/725/TITLEIST-LOGO.gif</item>
+        <item>http://www.hdicon.com/wp-content/uploads/2010/05/Taylor_made_1985.png</item>
+        <item>http://photos.prnewswire.com/prnvar/20091203/CGLOGO</item>
+        <item>http://d2tbfnbweol72x.cloudfront.net/RoyalScotGolfClub/files/2014/11/b4.gif</item>
+        <item>http://www.golfsmith.com/_site_images/pp_copy/cobra-golf-logo.jpg</item>
+
+        <!-- THEME: TRAINS -->
+        <item>http://ih1.redbubble.net/image.11770314.6513/sticker,375x360.u2.png</item>
+        <item>http://4.bp.blogspot.com/_gCj1Ij_goGk/TQ3kELV12OI/AAAAAAAADuM/3HO3qJhw1Ls/s1600/Chicago_and_North_Western_Railway_Logo_svg.png</item>
+        <item>http://www.wfprr.com/pics/logo.gif</item>
+        <item>http://www.48hourslogo.com/48hourslogo_data/20130411/201304112102100.jpg</item>
+        <item>http://brandongaille.com/wp-content/uploads/2014/05/Norfolk-Southern-Corp-Company-Logo.png</item>
+        <item>http://www.rfandp.org/cleanedgifs/49nose-pass.gif</item>
+        <item>http://www.durango.org/logos/_constrained/DSOfficialLogo.png</item>
+
+        <!-- THEME: BEERS -->
+        <item>http://www.stpetewineandfoodfest.com/wp-content/uploads/2015/05/beer_logo1.png</item>
+        <item>https://www.yuengling.com/img/layout/logo.png</item>
+        <item>http://www.claddaghirishpubs.com/indianapolis-downtown/wp-content/uploads/sites/8/2014/10/GooseIsland_Logo.jpg</item>
+        <item>https://slidersgrillbar.com/wp-content/uploads/2014/08/LEINENKUGEL-LOGO1.png</item>
+        <item>http://thisisoctoberfest.com/wp-content/uploads/2013/08/Logo-Square_300x.png</item>
+        <item>http://new.mercantilelibrary.com/wp-content/uploads/2015/05/anchor.jpeg</item>
+        <item>http://www.projectbyproject.org/wp-content/uploads/2013/01/350px-Sapporo_beer_logo.svg_.png</item>
     </string-array>
 </resources>

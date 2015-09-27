@@ -9,22 +9,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UI Animator Viewer"
+        android:text="LOGO&apos;s"
         android:id="@+id/textView"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tutorials point"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
         android:textColor="#92c71d"
         android:textIsSelectable="false"
-        android:textSize="35dp" />
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -36,34 +27,37 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Tutorials"
+            android:text="Button 1"
             android:id="@+id/button1"
             android:background="#92c71d"
             android:layout_below="@+id/imageView"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
 
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Chrome"
+            android:text="Buttom 2"
             android:id="@+id/button2"
             android:background="#92c71d"
             android:layout_below="@+id/imageView"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
 
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Ubuntu"
+            android:text="Button 3"
             android:id="@+id/button3"
             android:background="#92c71d"
             android:layout_below="@+id/imageView"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp" />
 
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Batman"
+            android:text="Buttom4"
             android:id="@+id/button4"
             android:background="#92c71d"
             android:layout_below="@+id/button1"
@@ -73,7 +67,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Android"
+            android:text="Button 5"
             android:id="@+id/button5"
             android:background="#92c71d"
             android:layout_below="@+id/button2"
@@ -83,7 +77,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="Superman"
+            android:text="Buttom 6"
             android:id="@+id/button6"
             android:background="#92c71d"
             android:layout_below="@+id/button3"

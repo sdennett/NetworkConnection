@@ -15,6 +15,7 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -24,30 +25,73 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainActivity extends Activity {
     private ProgressDialog progressDialog;
     private Bitmap bitmap = null;
     private final ArrayList<Bitmap> bitmapArray = new ArrayList<>();
     Button b1 ,b2, b3, b4, b5, b6;
+    private final int SOFTDRINKS = 0;
+    private final int GOLF = 7;
+    private final int TRAINS = 14;
+    private final int BEERS = 21;
+    private final int MIN = 1;
+    private final int MAX = 4;
+    private int THEME = BEERS;
+    private Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        int rn = rand.nextInt((MAX - MIN) + 1) + MIN;
+        Toast.makeText(getApplicationContext(),"Random = " + rn, Toast.LENGTH_LONG).show();
+        switch (rn) {
+            case 1:
+                THEME = SOFTDRINKS;
+                break;
+            case 2:
+                THEME = GOLF;
+                break;
+            case 3:
+                THEME = TRAINS;
+                break;
+            case 4:
+                THEME = BEERS;
+                break;
+            default:
+                THEME = BEERS;
+        }
+
         b1 = (Button) findViewById(R.id.button1);
         b2 = (Button) findViewById(R.id.button2);
         b3 = (Button) findViewById(R.id.button3);
         b4 = (Button) findViewById(R.id.button4);
         b5 = (Button) findViewById(R.id.button5);
         b6 = (Button) findViewById(R.id.button6);
+        TextView screenTitle = (TextView) findViewById(R.id.textView);
+
+        String[] url = getResources().getStringArray(R.array.urls);
+        String[] bn = getResources().getStringArray(R.array.buttons);
+
+        screenTitle.setText(bn[THEME + 0]);
+        b1.setText(bn[THEME + 1]);
+        b2.setText(bn[THEME + 2]);
+        b3.setText(bn[THEME + 3]);
+        b4.setText(bn[THEME + 4]);
+        b5.setText(bn[THEME + 5]);
+        b6.setText(bn[THEME + 6]);
+
+        downloadImage(url[THEME + 0]);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[0]);
+                downloadImage(url[THEME + 1]);
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +99,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[1]);
+                downloadImage(url[THEME + 2]);
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +107,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[2]);
+                downloadImage(url[THEME + 3]);
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +115,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[3]);
+                downloadImage(url[THEME + 4]);
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +123,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[4]);
+                downloadImage(url[THEME + 5]);
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +131,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //checkInternetConenction();
                 String[] url = getResources().getStringArray(R.array.urls);
-                downloadImage(url[5]);
+                downloadImage(url[THEME + 6]);
             }
         });
     }
